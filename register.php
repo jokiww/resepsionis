@@ -404,7 +404,7 @@
                     <div class="form-group">
                         <div class="input-icon">
                             <span class="fables-iconpassword fables-input-icon font-19 mt-1"></span>
-                            <input name="password" id="password" type="password" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Password">
+                            <input name="password" id="password" type="password" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Password" >
                         </div>
 
                     </div>
@@ -417,8 +417,8 @@
                     </div>
                     <div class="">
                         <div class="form-group">
-                            <select class="form-control" name="level" id="level" required placeholder="Silahkan Pilih">
-                                <option disabled="disabled" selected >Silahkan Pilih</option>
+                            <select class="form-control" name="level" id="level" required placeholder="Silahkan Pilih" required>
+                                <option  hidden >Silahkan Pilih</option>
                                 <option value="1">1. Resepsionis</option>
                                 <option value="2">2. Pengunjung Web</option>
                                 <option value="3">3. Karyawan</option>
