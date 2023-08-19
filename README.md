@@ -5,7 +5,7 @@ Terdapat 3 Level :
 
 # Resepsionis 
 > Menerima tlp masuk : 
-    1. id
+    [x] id
     2. atas nama siapa
     3. jenis kelamin
     4. dari pihak instansi apa
