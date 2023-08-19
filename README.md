@@ -4,7 +4,7 @@
 3. Karyawan
  
 ## 1.Resepsionis 
-### Menerima tlp masuk : 
+### > Menerima tlp masuk : 
 1. id
 2. atas nama siapa
 3. jenis kelamin
@@ -16,7 +16,7 @@
 9. ditujukan untuk siapa
 10. notes keperluan tlp
 
-### Mencatat kedatangan tamu : 
+### > Mencatat kedatangan tamu : 
 1. id
 2. atas nama siapa
 3. jenis kelamin
@@ -28,7 +28,7 @@
 9. tujuan kedatangan  bertemu dengan siapa
 10. notes keperluan kedatangan
 
-### Mencatat Paket surat apabila ada Masuk :
+### > Mencatat Paket surat apabila ada Masuk :
 1. id
 2. atas nama paket siapa
 3. dari pihak instansi apa
