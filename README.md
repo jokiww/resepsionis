@@ -12,27 +12,16 @@ Terdapat 3 Level :
     - alamat instansi / penelepon
     - tgl tlp masuk
     - nomor tlp penelepon
+<<<<<<< HEAD
     - urgent / tidak urgent
     - ditujukan untuk siapa
     - notes keperluan tlp
 
-> Mencatat kedatangan tamu : 
-    - id
-    - atas nama siapa
-    - jenis kelamin
-    - dari pihak instansi apa
-    - alamat instansi 
-    - tgl kedatangan
-    - identitas jaminan kedatangan (KTP,SIM)
-    - urgent / tidak urgent
-    - tujuan kedatangan  bertemu dengan siapa
-    - notes keperluan kedatangan
 
-> Mencatat Paket surat apabila ada Masuk :
-    - id
-    - atas nama paket siapa
-    - dari pihak instansi apa
-    - alamat instansi
-    - tgl kedatangan surat
+=======
+    - ditujukan untuk siapa
+    - notes keperluan tlp
+    - urgent / tidak urgent
+>>>>>>> f3310ebe507c2dc4cc0749d8706462f76bdab3ce
     
 
