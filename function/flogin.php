@@ -23,7 +23,7 @@ if (isset($_POST["login"])) {
 	} else {
 		echo "<script>
     alert ('Data mengalami kegagalan! Harap ulang kembali');
-    document.location.href = 'home1.php';
+    document.location.href = 'login.php';
     </script>
     ";
 

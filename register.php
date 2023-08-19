@@ -426,7 +426,7 @@
                         </div>
                     </div>
                     <button type="submit" name="register" class="btn btn-block rounded-0 white-color fables-main-hover-background-color fables-second-background-color font-16 semi-font py-3">Register Now</button>
-                    <a href="#" class="fables-forth-text-color font-16 fables-second-hover-color underline mt-3 mb-4 mb-lg-5 d-block">Forgot Password ?</a>
+                    <br>
                     <p class="fables-forth-text-color">Already have an account ? <a href="login.php" class="font-16 semi-font fables-second-text-color underline fables-main-hover-color ml-2">Login</a></p>
                 </form>
             </div>
