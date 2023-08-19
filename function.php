@@ -1,7 +1,7 @@
 <?php 
 
 // koneksi ke databese
-$db = mysqli_connect("localhost", "root", "", "biodata");
+$db = mysqli_connect("localhost", "root", "", "resepsionis");
 
 function query($query){
     global $db;
