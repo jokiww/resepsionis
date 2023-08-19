@@ -404,7 +404,7 @@
                     <div class="form-group">
                         <div class="input-icon">
                             <span class="fables-iconpassword fables-input-icon font-19 mt-1"></span>
-                            <input name="password" id="password" type="password" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Password" >
+                            <input name="password" id="password" type="password" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Harus mengandung setidaknya satu angka dan satu huruf besar dan kecil, dan setidaknya 8 karakter atau lebih">
                         </div>
 
                     </div>
@@ -418,7 +418,7 @@
                     <div class="">
                         <div class="form-group">
                             <select class="form-control" name="level" id="level" required placeholder="Silahkan Pilih" required>
-                                <option  hidden >Silahkan Pilih</option>
+                                <option  hidden >Silahkan Pilih Akses Anda</option>
                                 <option value="1">1. Resepsionis</option>
                                 <option value="2">2. Pengunjung Web</option>
                                 <option value="3">3. Karyawan</option>

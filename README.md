@@ -12,7 +12,7 @@
 5. alamat instansi / penelepon
 6. tgl tlp masuk
 7. nomor tlp penelepon
-8. urgent / tidak urgent
+8. urgent / tidak urgent (jenis kepentingan)
 9. ditujukan untuk siapa
 10. notes keperluan tlp
 
@@ -24,7 +24,7 @@
 5. alamat instansi 
 6. tgl kedatangan
 7. identitas jaminan kedatangan (KTP,SIM)
-8. urgent / tidak urgent
+8. urgent / tidak urgent (jenis kepentingan)
 9. tujuan kedatangan  bertemu dengan siapa
 10. notes keperluan kedatangan
 
