@@ -3,7 +3,7 @@
 2. Resepsionis
 3. Karyawan
  
-## Resepsionis 
+## 1.Resepsionis 
 ### Menerima tlp masuk : 
 1. id
 2. atas nama siapa
