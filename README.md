@@ -5,16 +5,16 @@ Terdapat 3 Level :
 
 # Resepsionis 
 > Menerima tlp masuk : 
-    * id
-    - atas nama siapa
-    + jenis kelamin
-    * dari pihak instansi apa
-    - alamat instansi / penelepon
-    + tgl tlp masuk
-    - nomor tlp penelepon
-    + urgent / tidak urgent
-    * ditujukan untuk siapa
-    - notes keperluan tlp
+    1. id
+    2. atas nama siapa
+    3. jenis kelamin
+    4. dari pihak instansi apa
+    5. alamat instansi / penelepon
+    6. tgl tlp masuk
+    7. nomor tlp penelepon
+    8. urgent / tidak urgent
+    9. ditujukan untuk siapa
+    10. notes keperluan tlp
 
 > Mencatat kedatangan tamu : 
     * id
