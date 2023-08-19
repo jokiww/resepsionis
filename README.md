@@ -12,7 +12,7 @@ Terdapat 3 Level :
     - alamat instansi / penelepon
     - tgl tlp masuk
     - nomor tlp penelepon
-    - 
     - ditujukan untuk siapa
     - notes keperluan tlp
+    - urgent / tidak urgent
     
