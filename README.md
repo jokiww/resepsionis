@@ -1,6 +1,6 @@
 # Terdapat 3 Level : 
-1. Pengunjung web
-2. Resepsionis
+1. Resepsionis
+2. Pengunjung web
 3. Karyawan
  
 ## 1.Resepsionis 
