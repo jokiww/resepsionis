@@ -27,9 +27,13 @@ function registrasi($POST) {
     $result = mysqli_query($db, "SELECT username FROM users WHERE username = '$username'");
 
     if (mysqli_fetch_assoc($result)) {
-        echo "<script>
-    alert ('username sudah terdaftar');
-    </script>";
+        echo "
+        <script language='JavaScript'>
+        then(function(){ 
+                window.location.href = '406.php';
+               }
+            );
+        </script>";
     return false;
     }
 

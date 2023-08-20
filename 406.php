@@ -7,9 +7,9 @@
     <meta name="author" content="Enterprise Development">
     <link rel="shortcut icon" href="assets/custom/images/shortcut.png">
 
-    <title> Signin</title>
-    
-    <!-- animate.css-->  
+    <title> Allert</title>
+
+    <!-- animate.css-->
     <link href="assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
     <!-- Load Screen -->
     <link href="assets/vendor/loadscreen/css/spinkit.css" rel="stylesheet">
@@ -18,9 +18,9 @@
     <!-- Font Awesome 5 -->
     <link href="assets/vendor/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
     <!-- Fables Icons -->
-    <link href="assets/custom/css/fables-icons.css" rel="stylesheet"> 
+    <link href="assets/custom/css/fables-icons.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap-4-navbar.css" rel="stylesheet">
     <!-- FANCY BOX -->
     <link href="assets/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet">
@@ -28,23 +28,16 @@
     <link href="assets/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet">
     <!-- Timeline -->
-    <link rel="stylesheet" href="assets/vendor/timeline/timeline.css"> 
+    <link rel="stylesheet" href="assets/vendor/timeline/timeline.css">
     <!-- FABLES CUSTOM CSS FILE -->
     <link href="assets/custom/css/custom.css" rel="stylesheet">
     <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
-    <link href="assets/custom/css/custom-responsive.css" rel="stylesheet"> 
-    <!-- SWEET ALERT -->
-    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-     
+    <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
+
 </head>
 
-<body>
 
-<!-- function login -->
-<?php
-require 'function/flogin.php';
-?>
+<body>
 
 <div class="search-section">
     <a class="close-search" href="#"></a>
@@ -106,7 +99,7 @@ require 'function/flogin.php';
 <div class="fables-navigation fables-main-background-color py-3 py-lg-0">
     <div class="container">
                <div class="row">
-                   <div class="mx-auto d-block">                       
+                   <div class="col-12 col-md-10 col-lg-9 pr-md-0">                       
                        <nav class="navbar navbar-expand-md btco-hover-menu py-lg-2">
          
                             <a class="navbar-brand pl-0" href="index.html"><img src="assets/custom/images/fables-logo.png" alt="Fables Template" class="fables-logo"></a>
@@ -115,7 +108,7 @@ require 'function/flogin.php';
                             </button>
                             <div class="collapse navbar-collapse" id="fablesNavDropdown"> 
 
-                                <!-- <ul class="navbar-nav mx-auto fables-nav">   
+                                <ul class="navbar-nav mx-auto fables-nav">   
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="sub-nav1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Home
@@ -280,12 +273,12 @@ require 'function/flogin.php';
                                             <li><a class="dropdown-item" href="contactus3.html">Contact Us 3</a></li> 
                                         </ul>
                                     </li>  
-                                </ul>  -->
+                                </ul> 
 
                     </div>
                 </nav>
                    </div>
-                   <!-- <div class="col-12 col-md-2 col-lg-3 pr-md-0 icons-header-mobile">
+                   <div class="col-12 col-md-2 col-lg-3 pr-md-0 icons-header-mobile">
                        
                     <div class="fables-header-icons">
                         <div class="dropdown"> 
@@ -335,90 +328,75 @@ require 'function/flogin.php';
                          
                          
                     </div>
-                   </div> -->
+                   </div>
                </div>
     </div>
 </div> 
-<!-- /End Fables Navigation -->
-     
+<!-- /End Fables Navigation --> 
+
 <!-- Start Header -->
 <div class="fables-header fables-after-overlay">
-    <div class="container"> 
-         <h2 class="fables-page-title fables-second-border-color">Signin</h2>
+    <div class="container">
+         <h2 class="fables-page-title fables-second-border-color">ERROR</h2>
     </div>
-</div>  
+</div>
 <!-- /End Header -->
-     
+
 <!-- Start Breadcrumbs -->
 <div class="fables-light-background-color">
-    <div class="container"> 
+    <div class="container">
         <nav aria-label="breadcrumb">
           <ol class="fables-breadcrumb breadcrumb px-0 py-3">
             <li class="breadcrumb-item"><a href="#" class="fables-second-text-color">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Signin</li>
+            <li class="breadcrumb-item active" aria-current="page">406</li>
           </ol>
-        </nav> 
+        </nav>
     </div>
 </div>
 <!-- /End Breadcrumbs -->
-     
-<!-- Start page content -->   
+
+<!-- Start page content -->
 <div class="container">
-     <div class="row my-4 my-lg-5">
-          <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
-               <img src="assets/custom/images/signin-logo.png" alt="signin" class="img-fluid">
-               <p class="font-20 semi-font fables-main-text-color mt-4 mb-4 mb-lg-5">Sign In Fables</p>
-               <form method="post">
-                  <div class="form-group"> 
-                      <div class="input-icon">
-                          <span class="fables-iconuser fables-input-icon mt-2 font-13"></span>
-                          <input type="text" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input"  name="username" id="username" placeholder="Username"> 
-                      </div>
-                    
-                  </div>
-                  <div class="form-group"> 
-                      <div class="input-icon">
-                         <span class="fables-iconpassword fables-input-icon font-19 mt-1"></span>
-                         <input type="password" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" name="password" id="password" placeholder="Password">
-                      </div>
-                    
-                  </div> 
-                  <button type="submit" name="login" class="btn btn-block rounded-0 white-color fables-main-hover-background-color fables-second-background-color font-16 semi-font py-3">Sign in</button>
-                  <br>
-                  <p class="fables-forth-text-color">Dont have an account ?  <a href="register.php" class="font-16 semi-font fables-second-text-color underline fables-main-hover-color ml-2">Register</a></p>
-                </form>
+     <div class="row">
+          <div class="col-12 col-lg-6 offset-lg-3">
+              <div class="text-center my-4 my-lg-5 py-4 py-lg-5">
+                  <h1 class="fables-second-text-color font-250 font-weight-bold"> 406 </h1>
+                  <h3 class="font-30 font-weight-bold fables-second-text-color">username already registered</h3>
+                  <p class="font-20 fables-fifth-text-color my-2">Not Acceptable</p>
+                  <a href="" class="btn fables-second-border-color fables-btn-rounded fables-background-link font-20 white-color px-5 py-2 mt-4">Back To Home</a>
+              </div>
           </div>
      </div>
 
 </div>
-      
+
 <!-- /End page content -->
-    
-    
+
+
 <!-- Start Footer 2 Background Image  -->
 <div class="fables-footer-image fables-after-overlay white-color py-4 py-lg-5 bg-rules">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 mt-2 mb-5 text-center">
                 <h2 class="font-30 semi-font mb-5">Newsletter</h2>
-                <form class="form-inline position-relative"> 
-                  <div class="form-group fables-subscribe-formgroup"> 
+                <form class="form-inline position-relative">
+                  <div class="form-group fables-subscribe-formgroup">
                     <input type="email" class="form-control fables-subscribe-input fables-btn-rouned" placeholder="Your Email">
                   </div>
                   <button type="submit" class="btn fables-second-background-color fables-btn-rouned fables-subscribe-btn">Subscribe</button>
                 </form>
-                
+
             </div>
             <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                 <a href="#" class="fables-second-border-color border-bottom pb-3 d-block mb-3 mt-minus-13"><img src="assets/custom/images/fables-logo.png" alt="fables template"></a>
                 <p class="font-15 fables-third-text-color">
-                    t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters. 
+                    t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
                     <br><br>
                     t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                </p> 
-                
+                </p>
+
             </div>
-             
+
             <div class="col-12 col-sm-6 col-lg-4">
                 <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3">Contact us</h2>
                <div class="my-3">
@@ -445,38 +423,38 @@ require 'function/flogin.php';
                     <li><a href="testimonials.html">Testimonials</a></li>
                 </ul>
             </div>
-                      
-        </div> 
-        
+
+        </div>
+
         </div>
 </div>
 <div class="copyright fables-main-background-color mt-0 border-0 white-color">
-        <ul class="nav fables-footer-social-links just-center fables-light-footer-links">
-            <li><a href="#" target="_blank"><i class="fab fa-google-plus-square"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-            <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
-        <p class="mb-0">Copyright © Fables 2018. All rights reserved.</p> 
+    <ul class="nav fables-footer-social-links just-center fables-light-footer-links">
+        <li><a href="#" target="_blank"><i class="fab fa-google-plus-square"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-facebook"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+    </ul>
+    <p class="mb-0">Copyright © Fables 2018. All rights reserved.</p>
 
 </div>
-    
-<!-- /End Footer 2 Background Image --> 
+
+<!-- /End Footer 2 Background Image -->
+
 
 
 <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
 <script src="assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
 <script src="assets/vendor/jquery-circle-progress/circle-progress.min.js"></script>
 <script src="assets/vendor/popper/popper.min.js"></script>
-<script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/vendor/bootstrap/js/bootstrap-4-navbar.js"></script>
-<script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script> 
+<script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script>
 <script src="assets/vendor/timeline/jquery.timelify.js"></script>
-<script src="assets/custom/js/custom.js"></script>  
-   
-    
+<script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
+<script src="assets/custom/js/custom.js"></script>
+
 </body>
 </html>

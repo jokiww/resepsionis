@@ -116,7 +116,7 @@
     <div class="fables-navigation fables-main-background-color py-3 py-lg-0">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-10 col-lg-9 pr-md-0">
+                <div class="mx-auto d-block">
                     <nav class="navbar navbar-expand-md btco-hover-menu py-lg-2">
 
                         <a class="navbar-brand pl-0" href="index.html"><img src="assets/custom/images/fables-logo.png" alt="Fables Template" class="fables-logo"></a>
@@ -124,8 +124,7 @@
                             <span class="fables-iconmenu-icon text-white font-16"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="fablesNavDropdown">
-
-                            <ul class="navbar-nav mx-auto fables-nav">
+                            <!-- <ul class="navbar-nav mx-auto fables-nav">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="sub-nav1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Home
@@ -291,12 +290,11 @@
                                         <li><a class="dropdown-item" href="contactus3.html">Contact Us 3</a></li>
                                     </ul>
                                 </li>
-                            </ul>
-
+                            </ul> -->
                         </div>
                     </nav>
                 </div>
-                <div class="col-12 col-md-2 col-lg-3 pr-md-0 icons-header-mobile">
+                <!-- <div class="col-12 col-md-2 col-lg-3 pr-md-0 icons-header-mobile">
 
                     <div class="fables-header-icons">
                         <div class="dropdown">
@@ -346,7 +344,7 @@
 
 
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
