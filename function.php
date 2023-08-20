@@ -29,19 +29,21 @@ function registrasi($POST) {
     if (mysqli_fetch_assoc($result)) {
         echo "
         <script language='JavaScript'>
-        then(function(){ 
-                window.location.href = '406.php';
-               }
-            );
+        
+                window.location.href = 'error/406.php';
+               
         </script>";
     return false;
     }
 
     // cek konfirmasi password
     if ($password != $password2) {
-        echo "<script>
-    alert ('password tidak sesuai');
-    </script>";
+        echo "
+        <script language='JavaScript'>
+        
+                window.location.href = 'error/412.php';
+               
+        </script>";
     return false;
     }
 

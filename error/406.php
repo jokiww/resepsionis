@@ -10,7 +10,7 @@
     <title> Allert</title>
 
     <!-- animate.css-->
-    <link href="assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
+    <link href="../assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
     <!-- Load Screen -->
     <link href="assets/vendor/loadscreen/css/spinkit.css" rel="stylesheet">
     <!-- GOOGLE FONT -->
@@ -363,7 +363,7 @@
                   <h1 class="fables-second-text-color font-250 font-weight-bold"> 406 </h1>
                   <h3 class="font-30 font-weight-bold fables-second-text-color">username already registered</h3>
                   <p class="font-20 fables-fifth-text-color my-2">Not Acceptable</p>
-                  <a href="" class="btn fables-second-border-color fables-btn-rounded fables-background-link font-20 white-color px-5 py-2 mt-4">Back To Home</a>
+                  <a href="register.php" class="btn fables-second-border-color fables-btn-rounded fables-background-link font-20 white-color px-5 py-2 mt-4">Back To Registrasi</a>
               </div>
           </div>
      </div>
