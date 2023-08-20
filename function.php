@@ -30,7 +30,7 @@ function registrasi($POST) {
         echo "
         <script language='JavaScript'>
         
-                window.location.href = 'error/406.php';
+                window.location.href = '406.php';
                
         </script>";
     return false;
@@ -41,7 +41,7 @@ function registrasi($POST) {
         echo "
         <script language='JavaScript'>
         
-                window.location.href = 'error/412.php';
+                window.location.href = '412.php';
                
         </script>";
     return false;

@@ -10,7 +10,7 @@
     <title> Allert</title>
 
     <!-- animate.css-->
-    <link href="../assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
     <!-- Load Screen -->
     <link href="assets/vendor/loadscreen/css/spinkit.css" rel="stylesheet">
     <!-- GOOGLE FONT -->
