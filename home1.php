@@ -556,7 +556,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4 offset-xl-2 col-xl-2 text-center">
-                    <a href="contactus1.html" class="btn fables-second-background-color fables-btn-rounded white-color mt-3 position-relative z-index font-19 px-5 py-2 white-color-hover">Contact us</a>
+                    <a href="contactus1.php" class="btn fables-second-background-color fables-btn-rounded white-color mt-3 position-relative z-index font-19 px-5 py-2 white-color-hover">Contact us</a>
                 </div>
             </div>
 

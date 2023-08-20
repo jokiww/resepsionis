@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +11,7 @@
     <link rel="shortcut icon" href="assets/custom/images/shortcut.png">
 
 
-    <title> Register </title>
+    <title> Access Receptionist </title>
     <!-- animate.css-->
     <link href="assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
     <!-- Load Screen -->
@@ -37,10 +39,6 @@
     <!-- SWEET ALERT -->
     <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-    <!-- css -->
-
-
     <!-- Javascript -->
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
@@ -50,10 +48,6 @@
 
 <body>
 
-    <!-- function registrasi -->
-    <?php
-    require 'function/fregistrasi.php';
-    ?>
 
 
     <div class=" search-section">
@@ -353,7 +347,7 @@
     <!-- Start Header -->
     <div class="fables-header fables-after-overlay">
         <div class="container">
-            <h2 class="fables-page-title fables-second-border-color">Register</h2>
+            <h2 class="fables-page-title fables-second-border-color">Access Receptionist</h2>
         </div>
     </div>
     <!-- /End Header -->
@@ -364,7 +358,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="fables-breadcrumb breadcrumb px-0 py-3">
                     <li class="breadcrumb-item"><a href="#" class="fables-second-text-color">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Register</li>
+                    <li class="breadcrumb-item active" aria-current="page">Access Receptionist</li>
                 </ol>
             </nav>
         </div>
@@ -372,64 +366,100 @@
     <!-- /End Breadcrumbs -->
 
     <!-- Start page content -->
-    <div class="container">
-        <div class="row my-4 my-lg-5">
-            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 text-center">
-                <img src="assets/custom/images/signin-logo.png" alt="signin" class="img-fluid">
-                <p class="font-20 semi-font fables-main-text-color mt-4 mb-5">Create a new account</p>
-                <form method="post">
-                    <!-- <div class="form-row form-group">
-                    <div class="col-12 col-md-6">
-                        <div class="input-icon">
-                              <span class="fables-iconuser-register fables-input-icon mt-2 font-13"></span>
-                              <input type="text" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Last name">
-                        </div>
-                    </div>
-                  </div> -->
-                    <div class="form-group">
-                        <div class="input-icon">
-                            <span class="fables-iconuser-register fables-input-icon mt-2 font-13"></span>
-                            <input type="text" name="username" id="username" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Username" required>
-                        </div>
-                    </div>
-                    <!-- <div class="form-group"> 
-                      <div class="input-icon">
-                          <span class="fables-iconemail fables-input-icon mt-2 font-13"></span>
-                          <input type="email" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input"  placeholder="Email"> 
-                      </div>
-                    
-                  </div> -->
-                    <div class="form-group">
-                        <div class="input-icon">
-                            <span class="fables-iconpassword fables-input-icon font-19 mt-1"></span>
-                            <input name="password" id="password" type="password" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Harus mengandung setidaknya satu angka dan satu huruf besar dan kecil, dan setidaknya 8 karakter atau lebih">
+
+
+    <div class="fables-choose-background fables-after-overlay py-4 py-md-5 bg-rules overflow-hidden px-3 px-md-0">
+        <div class="container position-relative z-index">
+            <div class="row">
+                <div class="col-12 col-lg-6 p-0 image-container translate-effect-right wow fadeInLeft mb-3 mb-md-0" data-wow-delay="1s" data-wow-duration="1.5s" style="border-radius: 2vh 0vh 0vh 2vh;">
+                    <img src="assets/custom/images/choose-img.jpg" alt="" class="w-100">
+                </div>
+                <div class="col-12 col-lg-6 bg-white px-6 py-3 py-md-5 wow fadeInRight" data-wow-delay="1s" data-wow-duration="1.5s" style="border-radius: 0vh 2vh 2vh 0vh;;">
+                    <h2 class="font-30 font-weight-bold fables-second-text-color">RESEPSIONIS MENU</h2>
+                    <p class="fables-main-text-color font-14 my-3">
+                        Harap mengisi segala data dengan hati-hati dan atas persetujuan dari pihak atasan, segala informasi yang diberikan bersifat terbuka antar pihak.
+                    </p>
+                    <div id="accordion">
+                        <div class="card border-0 mb-2">
+                            <div class="card-header p-0 border bg-transparent rounded-0" id="headingOne">
+                                <h5 class="mb-0 position-relative">
+                                    <span class="fables-second-background-color white-color d-inline-block position-absolute fables-lus-icon pt-2 text-center">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                    <button class="btn fables-main-text-color bg-transparent font-18 focus-0 d-block position-relative z-index pl-6 pt-2 pb-2 w-100 text-left border-0 text-truncate" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Data Kedatangan Tamu
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body fables-forth-text-color font-14 py-1 py-xl-2 pl-6 pr-0">
+                                    Segala informasi di'inputkan ke dalam data di bawah,dan segala informasi <b>kedatangan tamu</b> sudah di lampirkan secara terbuka dan mohon dijaga kerahasiaan segala data informasi yang diberikan dan di'inputkan
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                        <a href="tamu/tamu.php">
+                                            <button type="button" class="btn btn-info">
+                                                Info Data
+                                            </button>
+                                        </a>
+                                    </div>
+                            </div>
                         </div>
 
-                    </div>
-                    <div class="form-group">
-                        <div class="input-icon">
-                            <span class="fables-iconpassword fables-input-icon font-19 mt-1"></span>
-                            <input type="password" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Repeat Password" required name="password2" id="password2">
+                        <div class="card border-0 mb-2">
+                            <div class="card-header bg-transparent p-0 border rounded-0" id="headingTwo">
+                                <h5 class="mb-0 position-relative">
+                                    <span class="fables-second-background-color white-color d-inline-block position-absolute fables-lus-icon pt-2 text-center">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                    <button class="btn fables-main-text-color bg-transparent font-18 focus-0 d-block position-relative z-index pl-6 pt-2 pb-2 w-100 text-left border-0 text-truncate collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Data Penerimaan Surat / Paket
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body fables-forth-text-color font-14 py-1 py-xl-2 pl-6 pr-0">
+                                    Segala informasi di'inputkan ke dalam data di bawah,dan segala informasi <b>kedatangan surat / paket</b> sudah di lampirkan secara terbuka dan mohon dijaga kerahasiaan segala data informasi yang diberikan dan di'inputkan
+                                </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="surat/surat.php">
+                                            <button type="button" class="btn btn-info">
+                                                Info Data
+                                            </button>
+                                        </a>
+                                    </div>
+                            </div>
                         </div>
 
-                    </div>
-                    <div class="">
-                        <div class="form-group">
-                            <select class="form-control" name="level" id="level" required placeholder="Silahkan Pilih" required>
-                                <option  hidden >Silahkan Pilih Akses Anda</option>
-                                <option value="1">1. Resepsionis</option>
-                                <option value="2">2. Pengunjung Web</option>
-                                <option value="3">3. Karyawan</option>
-                            </select>
+                        <div class="card border-0 mb-2">
+                            <div class="card-header p-0 border bg-transparent rounded-0" id="headingThree">
+                                <h5 class="mb-0 position-relative">
+                                    <span class="fables-second-background-color white-color d-inline-block position-absolute fables-lus-icon pt-2 text-center">
+                                        <i class="fas fa-plus"></i>
+                                    </span>
+                                    <button class="btn fables-main-text-color bg-transparent font-18 focus-0 d-block position-relative z-index pl-6 pt-2 pb-2 w-100 text-left border-0 text-truncate collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Data Penerimaan Telepon Masuk
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body fables-forth-text-color font-14 py-1 py-xl-2 pl-6 pr-0">
+                                    Segala informasi di'inputkan ke dalam data di bawah,dan segala informasi <b>panggilan masuk telepon dari pihak luar perusahaan</b> sudah di lampirkan secara terbuka dan mohon dijaga kerahasiaan segala data informasi yang diberikan dan di'inputkan
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                        <a href="tlp/tlp.php">
+                                            <button type="button" class="btn btn-info">
+                                                Info Data
+                                            </button>
+                                        </a>
+                                    </div>
+                            </div>
                         </div>
                     </div>
-                    <button type="submit" name="register" class="btn btn-block rounded-0 white-color fables-main-hover-background-color fables-second-background-color font-16 semi-font py-3">Register Now</button>
-                    <br>
-                    <p class="fables-forth-text-color">Already have an account ? <a href="login.php" class="font-16 semi-font fables-second-text-color underline fables-main-hover-color ml-2">Login</a></p>
-                </form>
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
 
     <!-- /End page content -->
@@ -488,7 +518,7 @@
 
         </div>
     </div>
-    
+
     <div class="copyright fables-main-background-color mt-0 border-0 white-color">
         <ul class="nav fables-footer-social-links just-center fables-light-footer-links">
             <li><a href="#" target="_blank"><i class="fab fa-google-plus-square"></i></a></li>
