@@ -452,14 +452,14 @@
                 <div class="col-12 col-lg-4 mb-4 mb-lg-0">
                     <a href="#" class="fables-second-border-color border-bottom pb-3 d-block mb-3 mt-minus-13"><img src="assets/custom/images/fables-logo.png" alt="fables template"></a>
                     <p class="font-15 fables-third-text-color">
-                        t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.
+                        This Company Profile is compiled with the aim of providing information and insight to the parties concerned, especially the Users of Consulting Services, both in the government and private environment, regarding: company data, organization and management of the company, and proofs of the legality of the Company.
                         <br><br>
-                        t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                        In dealing with any job or activity, CV. TRI PILAR PRINCIPAL CONSULTANT as a Consulting Service Provider will provide the best service to the Users of Consulting Services. For that CV.
                     </p>
 
                 </div>
 
-                <div class="col-12 col-sm-6 col-lg-4">
+                <div class="col-12 col-sm-6 col-lg-4" id="test">
                     <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3">Contact us</h2>
                     <div class="my-3">
                         <h4 class="font-16 semi-font"><span class="fables-iconmap-icon fables-second-text-color pr-2 font-20 mt-1 d-inline-block"></span> Address Information</h4>
@@ -477,12 +477,10 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                     <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3 mb-3">EXPLORE OUR SITE</h2>
                     <ul class="nav fables-footer-links">
-                        <li><a href="about1.html">About Us</a></li>
-                        <li><a href="contactus1.html">Contact Us</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="team.html">Team</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="about.php">Profil</a></li>
+                        <li><a href="contactus1.php">Contact Us</a></li>
+                        <li><a href="blog-cat.php">Blog</a></li>
+                        <li><a href="produk.php">Store</a></li>
                     </ul>
                 </div>
 
