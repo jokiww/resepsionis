@@ -1,8 +1,8 @@
 <?php
-if (isset($_SESSION["login"])) {
-    header("Location: ../home1.php");
-    exit;
-}
+// if (isset($_SESSION["login"])) {
+//     header("Location: ../home1.php");
+//     exit;
+// }
 
 require 'function.php';
 
@@ -31,18 +31,12 @@ if (isset($_POST["login"])) {
     </script>
     ";
 
-	if (!isset($_SESSION["login"])) {
-		header("Location: home1.php");
-		exit;
-	}
+
 
 		// cek password
 		$row = mysqli_fetch_assoc($result);
 		if (password_verify($password, $row["password"])) {
-			// set session
-			$_SESSION["login"] = true;
-			header("Location: index.php");
-			exit;
+			
 		}
 	}
 

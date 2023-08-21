@@ -27,6 +27,8 @@
     <link href="assets/vendor/portfolio-filter-gallery/portfolio-filter-gallery.css" rel="stylesheet">
     <!-- FANCY BOX -->
     <link href="assets/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- ICON -->
+  <script src="https://kit.fontawesome.com/fd1a95cfd8.js" crossorigin="anonymous"></script>
     <!-- RANGE SLIDER -->
     <link href="assets/vendor/range-slider/range-slider.css" rel="stylesheet">
     <!-- OWL CAROUSEL  -->
@@ -221,13 +223,19 @@
                         <a href="#" class="open-search fables-third-text-color fables-mega-menu-btn px-4  fables-second-hover-color">
                             <span class="fables-iconsearch-icon"></span>
                         </a>
-                        <div class="dropdown d-inline-block float-left float-md-none">
-                            <a href="#_" class="fables-third-text-color dropdown-toggle px-4 fables-second-hover-color fables-mega-menu-btn position-relative" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="fables-iconcart-icon"></span>
-                            </a>
 
-                            
-                        </div>
+                        
+                        
+                            <a href="resepsionis.php" class="fables-third-text-color  px-4 fables-second-hover-color fables-mega-menu-btn position-relative" >
+                                <span class=""><i class="fa-solid fa-address-book"></i></span>
+                            </a>  
+                        
+
+                        
+                            <a href="login.php" class="fables-third-text-color  px-4 fables-second-hover-color fables-mega-menu-btn position-relative" >
+                                <span class=""><i class="fa-solid fa-right-from-bracket"></i></span>
+                            </a>  
+                        
 
 
                     </div>
