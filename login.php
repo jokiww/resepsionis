@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,6 +45,12 @@
 
 <!-- function login -->
 <?php
+// session_start();
+
+// if ( isset($_SESSION["login"])) {
+//     header("Location: home1.php");
+//     exit;
+// }
 require 'function/flogin.php';
 ?>
 

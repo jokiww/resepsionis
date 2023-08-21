@@ -1,5 +1,11 @@
 <?php
 // function index
+// session_start();
+
+// if (!isset($_SESSION["login"])) {
+//     header("Location: ../login.php");
+//     exit;
+// }
 require '../function/ftamu.php';
 
 $result = mysqli_query($db, "SELECT * FROM tamu ORDER BY no_kunjungan DESC");

@@ -1,5 +1,12 @@
 <?php
 // function index
+// session_start();
+
+// if (!isset($_SESSION["login"])) {
+//     header("Location: ../login.php");
+//     exit;
+// }
+
 require '../function/ftlp.php';
 
 $result = mysqli_query($db, "SELECT * FROM tlp ORDER BY id_tlp DESC");
