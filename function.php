@@ -169,43 +169,46 @@ function lubah($POST)
 
 
 
-function registrasi($POST)
-{
-    global $db;
+// function registrasi($POST)
+// {
+//     global $db;
 
-    $username = strtolower($POST["username"]);
-    $password = mysqli_real_escape_string($db, $POST["password"]);
-    $password2 = mysqli_real_escape_string($db, $POST["password2"]);
-    $level = mysqli_real_escape_string($db, $POST["level"]);
+//     $username = strtolower($POST["username"]);
+//     $email = mysqli_real_escape_string($db, $POST["email"]);
+//     $password = mysqli_real_escape_string($db, $POST["password"]);
+//     $password2 = mysqli_real_escape_string($db, $POST["password2"]);
+//     $level = mysqli_real_escape_string($db, $POST["level"]);
+//     $code = $code = md5($email.date('Y-m-d H:i:s'));
 
-    // cek username sudah ada atau belum
 
-    $result = mysqli_query($db, "SELECT username FROM users WHERE username = '$username'");
+//     // cek username sudah ada atau belum
 
-    if (mysqli_fetch_assoc($result)) {
-        echo "
-        <script language='JavaScript'>
+//     $result = mysqli_query($db, "SELECT username FROM users WHERE username = '$username'");
+
+//     if (mysqli_fetch_assoc($result)) {
+//         echo "
+//         <script language='JavaScript'>
         
-                window.location.href = '406.php';
+//                 window.location.href = '406.php';
                
-        </script>";
-        return false;
-    }
+//         </script>";
+//         return false;
+//     }
 
-    // cek konfirmasi password
-    if ($password != $password2) {
-        echo "
-        <script language='JavaScript'>
+//     // cek konfirmasi password
+//     if ($password != $password2) {
+//         echo "
+//         <script language='JavaScript'>
         
-                window.location.href = '412.php';
+//                 window.location.href = '412.php';
                
-        </script>";
-        return false;
-    }
+//         </script>";
+//         return false;
+//     }
 
-    // $password = password_hash($password,PASSWORD_DEFAULT);
+//     // $password = password_hash($password,PASSWORD_DEFAULT);
 
-    mysqli_query($db, "INSERT INTO users values ('','$username','$password','$level')");
+//     mysqli_query($db, "INSERT INTO users values ('','$username','$email','$password','$level','$code')");
 
-    return mysqli_affected_rows($db);
-}
+//     return mysqli_affected_rows($db);
+// }

@@ -126,7 +126,7 @@
         <div class="mx-auto d-block">
           <nav class="navbar navbar-expand-md btco-hover-menu py-lg-2">
 
-            <a class="navbar-brand pl-0" href="home1.php"><img src="../assets/custom/images/fables-logo.png" alt="Fables Template" class="fables-logo"></a>
+            <a class="navbar-brand pl-0" href="index.php"><img src="../assets/custom/images/fables-logo.png" alt="Fables Template" class="fables-logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fablesNavDropdown" aria-controls="fablesNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="fables-iconmenu-icon text-white font-16"></span>
             </button>

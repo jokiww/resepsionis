@@ -1,4 +1,17 @@
 <?php
+session_start();
+
+if (!isset($_SESSION['login'])) {
+    echo "
+    <script language='JavaScript'>
+    swal('Sorry!', 'Silahkan Login Terlebih Dahulu.', 'error').then(function(){ 
+        window.location.href = '../login.php';
+       }
+    );    
+</script>";
+exit;
+}
+
     require '../function.php';
     $no_kunjungan = $_GET["no_kunjungan"];
     $tamu = query("SELECT * FROM tamu WHERE no_kunjungan = $no_kunjungan")[0];

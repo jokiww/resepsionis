@@ -114,7 +114,7 @@
 
                             <ul class="navbar-nav mx-auto fables-nav">
                                 <li class="nav-item ">
-                                    <a class="nav-link " href="home1.php" id="" data-toggle="" aria-haspopup="" aria-expanded="">
+                                    <a class="nav-link " href="index.php" id="" data-toggle="" aria-haspopup="" aria-expanded="">
                                         Home
                                     </a>
                                 </li>

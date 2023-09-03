@@ -1,17 +1,3 @@
-<?php
-// function index
-// session_start();
-
-// if (!isset($_SESSION["login"])) {
-//     header("Location: ../login.php");
-//     exit;
-// }
-require '../function/ftamu.php';
-
-$result = mysqli_query($db, "SELECT * FROM tamu ORDER BY no_kunjungan DESC");
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,6 +53,12 @@ $result = mysqli_query($db, "SELECT * FROM tamu ORDER BY no_kunjungan DESC");
 </head>
 
 <body>
+    
+    <?php
+    require '../function/ftamu.php';
+
+    $result = mysqli_query($db, "SELECT * FROM tamu ORDER BY no_kunjungan DESC");
+    ?>
 
     <div class=" search-section">
         <a class="close-search" href="#"></a>

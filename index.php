@@ -232,7 +232,7 @@
                         
 
                         
-                            <a href="login.php" class="fables-third-text-color  px-4 fables-second-hover-color fables-mega-menu-btn position-relative" >
+                            <a type="button" href="logout.php" class="fables-third-text-color  px-4 fables-second-hover-color fables-mega-menu-btn position-relative" data-toggle="modal" data-target="#exampleModal" >
                                 <span class=""><i class="fa-solid fa-right-from-bracket"></i></span>
                             </a>  
                         
@@ -244,6 +244,31 @@
             </div>
         </div>
     </div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Logout Sistem</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Apakah anda yakin melakukan logout ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="logout.php">
+        <button  type="button" class="btn btn-danger">Logout</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
 
     <!-- Start Header -->
     <div class="fables-header fables-after-overlay overlay-lighter index-traingle bg-rules" style="background-image: url(assets/custom/images/index-background.jpg);">

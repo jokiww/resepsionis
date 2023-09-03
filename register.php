@@ -50,16 +50,14 @@
 
 <body>
 
-    <!-- function registrasi -->
-    <?php
-    require 'function/fregistrasi.php';
-    ?>
+    
+
 
 
     <div class=" search-section">
         <a class="close-search" href="#"></a>
         <div class="d-flex justify-content-center align-items-center h-100">
-            <form method="post" action="#" class="w-50">
+            <form action="proses.php" method="post"  class="w-50">
                 <div class="row">
                     <div class="col-10">
                         <input type="search" value="" class="form-control palce bg-transparent border-0 search-input" placeholder="Search Here ..." />
@@ -377,7 +375,7 @@
             <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 text-center">
                 <img src="assets/custom/images/signin-logo.png" alt="signin" class="img-fluid">
                 <p class="font-20 semi-font fables-main-text-color mt-4 mb-5">Create a new account</p>
-                <form method="post">
+                <form action="proses.php" method="post">
                     <!-- <div class="form-row form-group">
                     <div class="col-12 col-md-6">
                         <div class="input-icon">
@@ -390,6 +388,12 @@
                         <div class="input-icon">
                             <span class="fables-iconuser-register fables-input-icon mt-2 font-13"></span>
                             <input type="text" name="username" id="username" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Username" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-icon">
+                            <span class="fables-iconuser-register fables-input-icon mt-2 font-13"></span>
+                            <input type="email" name="email" id="email" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Email" required>
                         </div>
                     </div>
                     <!-- <div class="form-group"> 
@@ -409,11 +413,11 @@
                     <div class="form-group">
                         <div class="input-icon">
                             <span class="fables-iconpassword fables-input-icon font-19 mt-1"></span>
-                            <input type="password" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Repeat Password" required name="password2" id="password2">
+                            <input type="password" id="password2" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Repeat Password" required name="password2" id="password2">
                         </div>
 
                     </div>
-                    <div class="">
+                    <!-- <div class="">
                         <div class="form-group">
                             <select class="form-control" name="level" id="level" required placeholder="Silahkan Pilih" required>
                                 <option  hidden >Silahkan Pilih Akses Anda</option>
@@ -422,7 +426,18 @@
                                 <option value="3">3. Karyawan</option>
                             </select>
                         </div>
-                    </div>
+                    </div> -->
+                    
+                    <!-- <div class="">
+                        <div class="form-group">
+                            <select class="form-control" name="level" id="level" required placeholder="Silahkan Pilih" required>
+                                <option  hidden >Silahkan Pilih Akses Anda</option>
+                                <option value="1">1. Resepsionis</option>
+                                <option value="2">2. Pengunjung Web</option>
+                                <option value="3">3. Karyawan</option>
+                            </select>
+                        </div>
+                    </div> -->
                     <button type="submit" name="register" class="btn btn-block rounded-0 white-color fables-main-hover-background-color fables-second-background-color font-16 semi-font py-3">Register Now</button>
                     <br>
                     <p class="fables-forth-text-color">Already have an account ? <a href="login.php" class="font-16 semi-font fables-second-text-color underline fables-main-hover-color ml-2">Login</a></p>
@@ -516,12 +531,19 @@
     <script src="assets/vendor/timeline/jquery.timelify.js"></script>
     <script src="assets/custom/js/custom.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
-            $('select').selectize({
-                sortField: 'text'
-            });
-        });
-    </script>
+            window.onload = function () {
+                document.getElementById("password").onchange = validatePassword;
+                document.getElementById("password2").onchange = validatePassword;
+            }
+            function validatePassword(){
+                var pass2=document.getElementById("password2").value;
+                var pass1=document.getElementById("password").value;
+                if(pass1!=pass2)
+                    document.getElementById("password2").setCustomValidity("Password Tidak Sama, Coba Lagi");
+                else
+                    document.getElementById("password2").setCustomValidity('');
+            }
+        </script>
 
 </body>
 

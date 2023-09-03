@@ -126,7 +126,7 @@
                 <div class="mx-auto d-block">
                     <nav class="navbar navbar-expand-md btco-hover-menu py-lg-2">
 
-                        <a class="navbar-brand pl-0" href="home1.php"><img src="../assets/custom/images/fables-logo.png" alt="Fables Template" class="fables-logo"></a>
+                        <a class="navbar-brand pl-0" href="index.php"><img src="../assets/custom/images/fables-logo.png" alt="Fables Template" class="fables-logo"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fablesNavDropdown" aria-controls="fablesNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="fables-iconmenu-icon text-white font-16"></span>
                         </button>
@@ -397,9 +397,12 @@
             </div>
 
             <div class="mb-3">
-                <label for="jekel" class="form-label">Jenis Kelamin</label><br>
-                <input type="radio" name="jekel" value="L"> Laki-laki<br>
-                <input type="radio" name="jekel" value="P"> Perempuan<br>
+                <label for="jekel" class="form-label"><b>Jenis Kelamin :</b></label><br>
+                <select class="form-control" name="jekel" id="jekel" required placeholder="Silahkan Pilih" required>
+                    <option hidden>Jenis Kelamin...</option>
+                    <option value="L">1. Laki - Laki</option>
+                    <option value="P">2. Perempuan</option>
+                </select>
             </div>
 
             <div class="mb-3">
@@ -414,29 +417,46 @@
 
             <div class="mb-3">
                 <label for="tgl" class="form-label"><b>Tanggal Penerimaan :</b></label>
-                <input type="date" class="form-control" name="tgl" id="tgl" required >
+                <input type="date" class="form-control" name="tgl" id="tgl" required>
             </div>
 
+            
+
             <div class="mb-3">
-                <label for="jaminan_identitas" class="form-label"><b>Jaminan Identias :</b></label><br>
-                <label><input type="radio" name="jaminan_identitas" value="SIM" >SIM</label><br>
-                <label><input type="radio" name="jaminan_identitas" value="KTP" >KTP</label>
+                <label for="jaminan_identitas" class="form-label"><b>Jaminan Identitas :</b></label><br>
+                <select class="form-control" name="jaminan_identitas" id="jaminan_identitas" required placeholder="Silahkan Pilih" required>
+                    <option hidden>Jaminan Identitas...</option>
+                    <option value="SIM">1. SIM</option>
+                    <option value="KTP">2. KTP</option>
+                </select>
             </div>
 
             <div class="mb-3">
                 <label for="jenis_kepentingan" class="form-label"><b>Jenis Kepentingan :</b></label><br>
-                <label><input type="radio" name="jenis_kepentingan" value="urgent">Urgent</label><br>
-                <label><input type="radio" name="jenis_kepentingan" value="tidak urgent">TIdak Urgent</label>
+                <select class="form-control" name="jenis_kepentingan" id="jenis_kepentingan" required placeholder="Silahkan Pilih" required>
+                    <option hidden>Jenis Kepentingan...</option>
+                    <option value="urgent">1. Urgent</option>
+                    <option value="tidak urgent">2. Tidak Urgent</option>
+                </select>
             </div>
 
             <div class="mb-3">
-                <label for="tujuan_kedatangan" class="form-label"><b>Tujuan Kunjungan :</b></label>
-                <input type="text" class="form-control" name="tujuan_kedatangan" id="tujuan_kedatangan" >
+                <label for="tujuan_kedatangan" class="form-label"><b>Tujuan Kunjungan :</b></label><br>
+                <select class="form-control" name="tujuan_kedatangan" id="tujuan_kedatangan" required placeholder="Silahkan Pilih" required>
+                    <option hidden>Tujuan Kunjungan...</option>
+                    <option value="Penyerahan Dokumen">1. Penyerahan Dokumen</option>
+                    <option value="Rapat Kerja Sama">2. Rapat Kerja Sama</option>
+                    <option value="Pengajuan Kerja Sama">3. Pengajuan Kerja Sama</option>
+                    <option value="Pelaksanaan Konseling">4. Pelaksanaan Konseling</option>
+                    <option value="Tidak Dapat Disampaikan">5. Tidak Dapat Disampaikan <i>(informasi objektif)</i></option>
+                </select>
             </div>
+
+            
 
             <div class="mb-3">
                 <label for="notes_kedatangan" class="form-label"><b>Notes Kunjungan :</b></label>
-                <input type="text" class="form-control" name="notes_kedatangan" id="notes_kedatangan" required >
+                <input type="text" class="form-control" name="notes_kedatangan" id="notes_kedatangan" required>
             </div>
 
             <button type="submit" class="btn btn-primary" name="submit">Submit</button>

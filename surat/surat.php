@@ -1,17 +1,3 @@
-<?php
-// session_start();
-
-// if (!isset($_SESSION["login"])) {
-//     header("Location: ../login.php");
-//     exit;
-// }
-// function index
-require '../function/fsurat.php';
-
-$result = mysqli_query($db, "SELECT * FROM surat ORDER BY NIP DESC");
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,6 +53,11 @@ $result = mysqli_query($db, "SELECT * FROM surat ORDER BY NIP DESC");
 </head>
 
 <body>
+
+  <?php
+  require '../function/fsurat.php';
+  $result = mysqli_query($db, "SELECT * FROM surat ORDER BY NIP DESC");
+  ?>
 
   <div class=" search-section">
     <a class="close-search" href="#"></a>
