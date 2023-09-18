@@ -20,6 +20,8 @@ $nama = $_POST['username'];
 $email = $_POST['email'];
 $password = $_POST['password'];
 $code = md5($email . date('Y-m-d H:i:s'));
+$hak = $_POST['hak'];
+
 
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
@@ -61,7 +63,7 @@ try {
             echo "<script>
             window.location='406.php'</script>";
             } else {
-                $db->query("INSERT INTO users values ('','$nama','$email','$password','$code','')");
+                $db->query("INSERT INTO users values ('','$nama','$email','$password','$code','','$hak')");
 
                 echo "
                     <script language='JavaScript'>

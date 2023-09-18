@@ -166,6 +166,34 @@ function lubah($POST)
     mysqli_query($db, $query);
     return mysqli_affected_rows($db);
 }
+function getHashedPasswordFromDatabase($username) {
+    $db_connection = new mysqli("localhost", "root", "", "resepsionis");
+
+    if ($db_connection->connect_error) {
+        die("Koneksi database gagal: " . $db_connection->connect_error);
+    }
+
+    $username = $db_connection->real_escape_string($username);
+
+    $query = "SELECT password FROM users WHERE username = ?";
+    $stmt = $db_connection->prepare($query);
+    $stmt->bind_param("s", $username);
+    $stmt->execute();
+    $stmt->bind_result($hashed_password);
+
+    if ($stmt->fetch()) {
+        // Kata sandi ditemukan dalam database
+        $stmt->close();
+        $db_connection->close();
+        return $hashed_password;
+    } else {
+        // Pengguna tidak ditemukan dalam database
+        $stmt->close();
+        $db_connection->close();
+        return false;
+    }
+}
+
 
 
 

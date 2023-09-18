@@ -19,7 +19,7 @@
     //     header("Location: ../login.php");
     //     exit;
     // }
-    require '../function/fshapus.php';
+    require '../../../resepsionis/function/fthapus.php';
     ?>
 
 </body>

@@ -3,7 +3,7 @@ session_start();
 
 
 
-    require '../../../resepsionis/function.php';
+    require '../function.php';
     $no_kunjungan = $_GET["no_kunjungan"];
     $tamu = query("SELECT * FROM tamu WHERE no_kunjungan = $no_kunjungan")[0];
     // $sql=mysqli_query($siswa);

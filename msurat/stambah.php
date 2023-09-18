@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="CodeHim" />
-  <title>Ubah Data Surat</title>
+  <title>Tambah Data Surat</title>
   <!-- animate.css-->
   <link href="../assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
   <!-- Load Screen -->
@@ -60,7 +60,7 @@
   //     header("Location: ../login.php");
   //     exit;
   // }
-  require '../function/fsubah.php';
+  require '../function/mfstambah.php';
   ?>
 
   <div class=" search-section">
@@ -360,7 +360,7 @@
   <!-- Start Header -->
   <div class="fables-header fables-after-overlay">
     <div class="container">
-      <h2 class="fables-page-title fables-second-border-color">Ubah Data Surat</h2>
+      <h2 class="fables-page-title fables-second-border-color">Tambah Data Surat</h2>
     </div>
   </div>
   <!-- /End Header -->
@@ -370,8 +370,8 @@
     <div class="container">
       <nav aria-label="breadcrumb">
         <ol class="fables-breadcrumb breadcrumb px-0 py-3">
-          <li class="breadcrumb-item"><a href="resepsionis.php" class="fables-second-text-color">Access Receptionist</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Ubah Data Surat</li>
+          <li class="breadcrumb-item"><a href="../resepsionis.php" class="fables-second-text-color">Access Receptionist</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Tambah Data Surat</li>
         </ol>
       </nav>
     </div>
@@ -388,27 +388,27 @@
 
       <div class="mb-3">
         <label for="NIP" class="form-label">NIP</label>
-        <input type="text" class="form-control" name="NIP" id="NIP" required value="<?= $surat["NIP"] ?>">
+        <input type="text" class="form-control" name="NIP" id="NIP" required>
       </div>
 
       <div class="mb-3">
         <label for="atas_nama" class="form-label">Nama Pengirim</label>
-        <input type="text" class="form-control" name="atas_nama" id="atas_nama" required value="<?= $surat["atas_nama"] ?>">
+        <input type="text" class="form-control" name="atas_nama" id="atas_nama" required >
       </div>
 
       <div class="mb-3">
         <label for="pihak_instansi" class="form-label">Pihak Instansi Pengirim</label>
-        <input type="text" class="form-control" name="pihak_instansi" id="pihak_instansi" required value="<?= $surat["pihak_instansi"] ?>">
+        <input type="text" class="form-control" name="pihak_instansi" id="pihak_instansi" required >
       </div>
 
       <div class="mb-3">
         <label for="alamat_instansi" class="form-label">Alamat Instansi</label>
-        <input type="text" class="form-control" name="alamat_instansi" id="alamat_instansi" required value="<?= $surat["alamat_instansi"] ?>">
+        <input type="text" class="form-control" name="alamat_instansi" id="alamat_instansi" required>
       </div>
 
       <div class="mb-3">
         <label for="tgl" class="form-label">Tanggal Penerimaan</label>
-        <input type="date" class="form-control" name="tgl" id="tgl" required value="<?= $surat["tgl"] ?>">
+        <input type="date" class="form-control" name="tgl" id="tgl" required >
       </div>
 
       <button type="submit" class="btn btn-primary" name="submit">Submit</button>

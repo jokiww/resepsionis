@@ -60,7 +60,7 @@
     //     header("Location: ../login.php");
     //     exit;
     // }
-    require '../function/ftubah.php';
+    require '../function/mftubah.php';
     ?>
 
     <div class=" search-section">

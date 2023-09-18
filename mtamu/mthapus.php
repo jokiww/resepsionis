@@ -19,7 +19,7 @@
     //     header("Location: ../login.php");
     //     exit;
     // }
-    require '../function/fthapus.php';
+    require '../function/mfthapus.php';
     ?>
 
 </body>

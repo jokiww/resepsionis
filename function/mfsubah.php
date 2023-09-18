@@ -1,25 +1,33 @@
 <?php
 session_start();
 
-
-
-    require '../../../resepsionis/function.php';
-    $no_kunjungan = $_GET["no_kunjungan"];
-    $tamu = query("SELECT * FROM tamu WHERE no_kunjungan = $no_kunjungan")[0];
+// if (!isset($_SESSION['login'])) {
+//     echo "
+//     <script language='JavaScript'>
+//     swal('Sorry!', 'Silahkan Login Terlebih Dahulu.', 'error').then(function(){ 
+//         window.location.href = '../login.php';
+//        }
+//     );    
+// </script>";
+// exit;
+// }
+    require '../function.php';
+    $NIP = $_GET["NIP"];
+    $surat = query("SELECT * FROM surat WHERE NIP = $NIP")[0];
     // $sql=mysqli_query($siswa);
     // cek button tambah data sudah ditekan atau belom
     if (isset($_POST["submit"])) {
-        if (tubah($_POST) > 0) {
+        if (ubah($_POST) > 0) {
             echo "<script language='JavaScript'>
         swal('Success!', 'Your data have been saved. Thank you!', 'success').then(function(){ 
-                window.location.href = 'tamu.php';
+                window.location.href = 'surat.php';
                }
             );
         </script>";
         } else {
             echo "<script language='JavaScript'>
         swal('Sorry!', 'Opps, something went wrong. Please try again later.', 'error').then(function(){ 
-            window.location.href = 'tamu.php';
+            window.location.href = 'surat.php';
            }
         );    
     </script>";

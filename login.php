@@ -42,16 +42,15 @@
 </head>
 
 <body>
-
-<!-- function login -->
-<?php
+<?php 
 require 'function/flogin.php';
 ?>
+
 
 <div class="search-section">
     <a class="close-search" href="#"></a>
     <div class="d-flex justify-content-center align-items-center h-100">
-        <form method="post" action="#" class="w-50">
+        <form method="post"  class="w-50">
             <div class="row">
                 <div class="col-10">
                     <input type="search" value="" class="form-control palce bg-transparent border-0 search-input" placeholder="Search Here ..." /> 
@@ -370,18 +369,18 @@ require 'function/flogin.php';
           <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3 text-center">
                <img src="assets/custom/images/signin-logo.png" alt="signin" class="img-fluid">
                <p class="font-20 semi-font fables-main-text-color mt-4 mb-4 mb-lg-5">Sign In Fables</p>
-               <form method="post">
+               <form action="" method="post">
                   <div class="form-group"> 
                       <div class="input-icon">
                           <span class="fables-iconuser fables-input-icon mt-2 font-13"></span>
-                          <input type="text" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input"  name="username" id="username" placeholder="Username"> 
+                          <input type="text" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input"  name="username" id="username" placeholder="Username" required> 
                       </div>
                     
                   </div>
                   <div class="form-group"> 
                       <div class="input-icon">
                          <span class="fables-iconpassword fables-input-icon font-19 mt-1"></span>
-                         <input type="password" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" name="password" id="password" placeholder="Password">
+                         <input type="password" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" name="password" id="password" placeholder="Password" required>
                       </div>
                     
                   </div> 

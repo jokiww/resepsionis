@@ -2,67 +2,71 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Fables">
-    <meta name="author" content="Enterprise Development">
-    <link rel="shortcut icon" href="assets/custom/images/shortcut.png">
-
-
-    <title> Register </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="CodeHim" />
+    <title>Tambah Data Tamu</title>
     <!-- animate.css-->
-    <link href="assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
+    <link href="../assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
     <!-- Load Screen -->
-    <link href="assets/vendor/loadscreen/css/spinkit.css" rel="stylesheet">
+    <link href="../assets/vendor/loadscreen/css/spinkit.css" rel="stylesheet">
     <!-- GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <!-- Font Awesome 5 -->
-    <link href="assets/vendor/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="../assets/vendor/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
     <!-- Fables Icons -->
-    <link href="assets/custom/css/fables-icons.css" rel="stylesheet">
+    <link href="../assets/custom/css/fables-icons.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap-4-navbar.css" rel="stylesheet">
+    <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap-4-navbar.css" rel="stylesheet"> -->
     <!-- FANCY BOX -->
-    <link href="assets/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet">
     <!-- OWL CAROUSEL  -->
-    <link href="assets/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet">
+    <link href="../assets/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="../assets/vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet">
     <!-- Timeline -->
     <link rel="stylesheet" href="assets/vendor/timeline/timeline.css">
     <!-- FABLES CUSTOM CSS FILE -->
-    <link href="assets/custom/css/custom.css" rel="stylesheet">
+    <link href="../assets/custom/css/custom.css" rel="stylesheet">
     <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
-    <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
+    <link href="../assets/custom/css/custom-responsive.css" rel="stylesheet">
     <!-- SWEET ALERT -->
     <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-    <!-- css -->
-
-
     <!-- Javascript -->
     <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
-    <style>
-        select option[value="1"] {
-            display: none;
-        }
-    </style>
 
 
+    <!-- Style CSS -->
+    <!-- <link rel="stylesheet" href="./assets/custom/css/style.css" /> -->
+    <!-- Demo CSS (No need to include it into your project) -->
+    <link rel="stylesheet" href="../assets/custom/css/demo.css" />
+    <!-- Bootstrap 5 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" />
+    <!-- Data Table CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css" />
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
 </head>
 
 <body>
 
+    <!-- function ubah -->
+    <?php
+    // session_start();
 
-
-
+    // if (!isset($_SESSION["login"])) {
+    //     header("Location: ../login.php");
+    //     exit;
+    // }
+    require '../function/mfttambah.php';
+    ?>
 
     <div class=" search-section">
         <a class="close-search" href="#"></a>
         <div class="d-flex justify-content-center align-items-center h-100">
-            <form action="proses.php" method="post" class="w-50">
+            <form method="post" action="#" class="w-50">
                 <div class="row">
                     <div class="col-10">
                         <input type="search" value="" class="form-control palce bg-transparent border-0 search-input" placeholder="Search Here ..." />
@@ -95,9 +99,9 @@
                         </button>
                         <div class="dropdown-menu p-0 fables-forth-background-color rounded-0 m-0 border-0 lang-dropdown" aria-labelledby="dropdownLangButton">
                             <a class="dropdown-item white-color font-13 fables-second-hover-color" href="#">
-                                <img src="assets/custom/images/england.png" alt="england flag" class="mr-1"> English</a>
+                                <img src="../assets/custom/images/england.png" alt="england flag" class="mr-1"> English</a>
                             <a class="dropdown-item white-color font-13 fables-second-hover-color" href="#">
-                                <img src="assets/custom/images/France.png" alt="england flag" class="mr-1"> French</a>
+                                <img src="../assets/custom/images/France.png" alt="england flag" class="mr-1"> French</a>
                         </div>
                     </div>
 
@@ -122,7 +126,7 @@
                 <div class="mx-auto d-block">
                     <nav class="navbar navbar-expand-md btco-hover-menu py-lg-2">
 
-                        <a class="navbar-brand pl-0" href="index.html"><img src="assets/custom/images/fables-logo.png" alt="Fables Template" class="fables-logo"></a>
+                        <a class="navbar-brand pl-0" href="index.php"><img src="../assets/custom/images/fables-logo.png" alt="Fables Template" class="fables-logo"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fablesNavDropdown" aria-controls="fablesNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="fables-iconmenu-icon text-white font-16"></span>
                         </button>
@@ -356,7 +360,7 @@
     <!-- Start Header -->
     <div class="fables-header fables-after-overlay">
         <div class="container">
-            <h2 class="fables-page-title fables-second-border-color">Register</h2>
+            <h2 class="fables-page-title fables-second-border-color">Tambah Data Tamu</h2>
         </div>
     </div>
     <!-- /End Header -->
@@ -366,107 +370,101 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="fables-breadcrumb breadcrumb px-0 py-3">
-                    <li class="breadcrumb-item"><a href="#" class="fables-second-text-color">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Register</li>
+                    <li class="breadcrumb-item"><a href="resepsionis.php" class="fables-second-text-color">Access Receptionist</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Tambah Data Tamu</li>
                 </ol>
             </nav>
         </div>
     </div>
     <!-- /End Breadcrumbs -->
 
-    <!-- Start page content -->
-    <div class="container">
-        <div class="row my-4 my-lg-5">
-            <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-3 text-center">
-                <img src="assets/custom/images/signin-logo.png" alt="signin" class="img-fluid">
-                <p class="font-20 semi-font fables-main-text-color mt-4 mb-5">Create a new account</p>
-                <form action="proses.php" method="post">
-                    <!-- <div class="form-row form-group">
-                    <div class="col-12 col-md-6">
-                        <div class="input-icon">
-                              <span class="fables-iconuser-register fables-input-icon mt-2 font-13"></span>
-                              <input type="text" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Last name">
-                        </div>
-                    </div>
-                  </div> -->
-                    <div class="form-group">
-                        <div class="input-icon">
-                            <span class="fables-iconuser-register fables-input-icon mt-2 font-13"></span>
-                            <input type="text" name="username" id="username" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Username" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-icon">
-                            <span class="fables-iconemail fables-input-icon mt-2 font-13"></span>
-                            <input type="email" name="email" id="email" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Email" required>
-                        </div>
-                    </div>
-                    <!-- <div class="form-group"> 
-                      <div class="input-icon">
-                          <span class="fables-iconemail fables-input-icon mt-2 font-13"></span>
-                          <input type="email" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input"  placeholder="Email"> 
-                      </div>
-                    
-                  </div> -->
-                    <div class="form-group">
-                        <div class="input-icon">
-                            <span class="fables-iconpassword fables-input-icon font-19 mt-1"></span>
-                            <input name="password" id="password" type="password" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Harus mengandung setidaknya satu angka dan satu huruf besar dan kecil, dan setidaknya 8 karakter atau lebih">
-                        </div>
 
-                    </div>
-                    <div class="form-group">
-                        <div class="input-icon">
-                            <span class="fables-iconpassword fables-input-icon font-19 mt-1"></span>
-                            <input type="password" id="password2" class="form-control rounded-0 py-3 pl-5 font-13 sign-register-input" placeholder="Repeat Password" required name="password2" id="password2">
-                        </div>
 
-                    </div>
-                    
+    <!--$%adsense%$-->
+    <main class="cd__main">
+        <!-- Start DEMO HTML (Use the following code into your project)-->
 
-                    <div class="form-group">
-                        <div class="input-icon">
-                            <select name="hak" id="" class="form-control">
-                                <option value="1">Mendaftar Sebagai :</option>
-                                <option value="petugas">Petugas</option>
-                                <option value="tamu">Tamu</option>
-                                <option value="master">Admin Master <br><i>(Harap Menghubungi Pihak Perusahaan untuk <b>Tindak Selanjutnya)</b></i></option>
-                            </select>
-                        </div>
+        <form method="post">
 
-                    </div>
-
-                    <!-- <div class="">
-                        <div class="form-group">
-                            <select class="form-control" name="level" id="level" required placeholder="Silahkan Pilih" required>
-                                <option  hidden >Silahkan Pilih Akses Anda</option>
-                                <option value="1">1. Resepsionis</option>
-                                <option value="2">2. Pengunjung Web</option>
-                                <option value="3">3. Karyawan</option>
-                            </select>
-                        </div>
-                    </div> -->
-
-                    <!-- <div class="">
-                        <div class="form-group">
-                            <select class="form-control" name="level" id="level" required placeholder="Silahkan Pilih" required>
-                                <option  hidden >Silahkan Pilih Akses Anda</option>
-                                <option value="1">1. Resepsionis</option>
-                                <option value="2">2. Pengunjung Web</option>
-                                <option value="3">3. Karyawan</option>
-                            </select>
-                        </div>
-                    </div> -->
-                    <button type="submit" name="register" class="btn btn-block rounded-0 white-color fables-main-hover-background-color fables-second-background-color font-16 semi-font py-3">Register Now</button>
-                    <br>
-                    <p class="fables-forth-text-color">Already have an account ? <a href="login.php" class="font-16 semi-font fables-second-text-color underline fables-main-hover-color ml-2">Login</a></p>
-                </form>
+            <div class="mb-3">
+                <label for="no_kunjungan" class="form-label">No.Kunjungan</label>
+                <input type="text" class="form-control" name="no_kunjungan" id="no_kunjungan" required>
             </div>
-        </div>
 
-    </div>
+            <div class="mb-3">
+                <label for="atas_nama" class="form-label">Nama Pengunjung</label>
+                <input type="text" class="form-control" name="atas_nama" id="atas_nama" required>
+            </div>
 
-    <!-- /End page content -->
+            <div class="mb-3">
+                <label for="jekel" class="form-label"><b>Jenis Kelamin :</b></label><br>
+                <select class="form-control" name="jekel" id="jekel" required placeholder="Silahkan Pilih" required>
+                    <option hidden>Jenis Kelamin...</option>
+                    <option value="L">1. Laki - Laki</option>
+                    <option value="P">2. Perempuan</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="pihak_instansi" class="form-label"><b>Pihak Instansi Pengirim :</b></label>
+                <input type="text" class="form-control" name="pihak_instansi" id="pihak_instansi" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="alamat_instansi" class="form-label"><b>Alamat Instansi :</b></label>
+                <input type="text" class="form-control" name="alamat_instansi" id="alamat_instansi" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="tgl" class="form-label"><b>Tanggal Penerimaan :</b></label>
+                <input type="date" class="form-control" name="tgl" id="tgl" required>
+            </div>
+
+            
+
+            <div class="mb-3">
+                <label for="jaminan_identitas" class="form-label"><b>Jaminan Identitas :</b></label><br>
+                <select class="form-control" name="jaminan_identitas" id="jaminan_identitas" required placeholder="Silahkan Pilih" required>
+                    <option hidden>Jaminan Identitas...</option>
+                    <option value="SIM">1. SIM</option>
+                    <option value="KTP">2. KTP</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="jenis_kepentingan" class="form-label"><b>Jenis Kepentingan :</b></label><br>
+                <select class="form-control" name="jenis_kepentingan" id="jenis_kepentingan" required placeholder="Silahkan Pilih" required>
+                    <option hidden>Jenis Kepentingan...</option>
+                    <option value="urgent">1. Urgent</option>
+                    <option value="tidak urgent">2. Tidak Urgent</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="tujuan_kedatangan" class="form-label"><b>Tujuan Kunjungan :</b></label><br>
+                <select class="form-control" name="tujuan_kedatangan" id="tujuan_kedatangan" required placeholder="Silahkan Pilih" required>
+                    <option hidden>Tujuan Kunjungan...</option>
+                    <option value="Penyerahan Dokumen">1. Penyerahan Dokumen</option>
+                    <option value="Rapat Kerja Sama">2. Rapat Kerja Sama</option>
+                    <option value="Pengajuan Kerja Sama">3. Pengajuan Kerja Sama</option>
+                    <option value="Pelaksanaan Konseling">4. Pelaksanaan Konseling</option>
+                    <option value="Tidak Dapat Disampaikan">5. Tidak Dapat Disampaikan <i>(informasi objektif)</i></option>
+                </select>
+            </div>
+
+            
+
+            <div class="mb-3">
+                <label for="notes_kedatangan" class="form-label"><b>Notes Kunjungan :</b></label>
+                <input type="text" class="form-control" name="notes_kedatangan" id="notes_kedatangan" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+        </form>
+    </main>
+
+
+
 
 
     <!-- Start Footer 2 Background Image  -->
@@ -484,7 +482,7 @@
 
                 </div>
                 <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                    <a href="#" class="fables-second-border-color border-bottom pb-3 d-block mb-3 mt-minus-13"><img src="assets/custom/images/fables-logo.png" alt="fables template"></a>
+                    <a href="#" class="fables-second-border-color border-bottom pb-3 d-block mb-3 mt-minus-13"><img src="../assets/custom/images/fables-logo.png" alt="fables template"></a>
                     <p class="font-15 fables-third-text-color">
                         This Company Profile is compiled with the aim of providing information and insight to the parties concerned, especially the Users of Consulting Services, both in the government and private environment, regarding: company data, organization and management of the company, and proofs of the legality of the Company.
                         <br><br>
@@ -511,10 +509,10 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                     <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3 mb-3">EXPLORE OUR SITE</h2>
                     <ul class="nav fables-footer-links">
-                        <li><a href="about.php">Profil</a></li>
-                        <li><a href="contactus1.php">Contact Us</a></li>
-                        <li><a href="blog-cat.php">Blog</a></li>
-                        <li><a href="produk.php">Store</a></li>
+                        <li><a href="../about.php">Profil</a></li>
+                        <li><a href="../contactus1.php">Contact Us</a></li>
+                        <li><a href="../blog-cat.php">Blog</a></li>
+                        <li><a href="../produk.php">Store</a></li>
                     </ul>
                 </div>
 
@@ -539,32 +537,28 @@
     <!-- /End Footer 2 Background Image -->
 
 
-    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
-    <script src="assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
-    <script src="assets/vendor/jquery-circle-progress/circle-progress.min.js"></script>
-    <script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
-    <script src="assets/vendor/popper/popper.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap-4-navbar.js"></script>
-    <script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script>
-    <script src="assets/vendor/timeline/jquery.timelify.js"></script>
-    <script src="assets/custom/js/custom.js"></script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById("password").onchange = validatePassword;
-            document.getElementById("password2").onchange = validatePassword;
-        }
+    <script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
+    <script src="../assets/vendor/jquery-circle-progress/circle-progress.min.js"></script>
+    <script src="../assets/vendor/WOW-master/dist/wow.min.js"></script>
+    <script src="../assets/vendor/popper/popper.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap-4-navbar.js"></script>
+    <script src="../assets/vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../assets/vendor/timeline/jquery.timelify.js"></script>
+    <script src="../assets/custom/js/custom.js"></script>
 
-        function validatePassword() {
-            var pass2 = document.getElementById("password2").value;
-            var pass1 = document.getElementById("password").value;
-            if (pass1 != pass2)
-                document.getElementById("password2").setCustomValidity("Password Tidak Sama, Coba Lagi");
-            else
-                document.getElementById("password2").setCustomValidity('');
-        }
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <!-- Data Table JS -->
+    <script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.1.0/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"></script>
+    <!-- Script JS -->
+    <script>
+        new DataTable('#example');
     </script>
-
+    <!--$%analytics%$-->
 </body>
 
 </html>

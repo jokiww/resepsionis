@@ -1,7 +1,7 @@
 # Terdapat 3 Level : 
-1. Resepsionis
-2. Pengunjung web
-3. Karyawan
+1. pengunjung
+2. petugas
+3. master admin
  
 ## 1.Resepsionis 
 ### > Menerima tlp masuk : 
@@ -34,6 +34,18 @@
 3. dari pihak instansi apa
 4. alamat instansi
 5. tgl kedatangan surat
+
+
+### > Hak akses pendatang :
+1. hanya dapat mengakses halaman tamu dan hanya dapat read data dan menambah data saja
+
+### > Hak akses petugas :
+1. hanya dapat mengakses halaman tamu dan user dapat melakukan aksi hapus,tambah,edit,dan read
+
+### > Hak akses master admin :
+1. master admin dapat melakukan all crud dan cetak all entry data ,hak akses master admin tidak didapatkan oleh semua user tanpa terkecuali dan diharuskan mendapat persetujuan dari perusahaan
+
+
 
 
     

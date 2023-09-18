@@ -1,8 +1,4 @@
-<?php 
 
-
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,29 +13,29 @@
 
     <title> Access Receptionist </title>
     <!-- animate.css-->
-    <link href="assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
+    <link href="../assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
     <!-- Load Screen -->
-    <link href="assets/vendor/loadscreen/css/spinkit.css" rel="stylesheet">
+    <link href="../assets/vendor/loadscreen/css/spinkit.css" rel="stylesheet">
     <!-- GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <!-- Font Awesome 5 -->
-    <link href="assets/vendor/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="../assets/vendor/fontawesome/css/fontawesome-all.min.css" rel="stylesheet">
     <!-- Fables Icons -->
-    <link href="assets/custom/css/fables-icons.css" rel="stylesheet">
+    <link href="../assets/custom/css/fables-icons.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap-4-navbar.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/vendor/bootstrap/css/bootstrap-4-navbar.css" rel="stylesheet">
     <!-- FANCY BOX -->
-    <link href="assets/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="../assets/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet">
     <!-- OWL CAROUSEL  -->
-    <link href="assets/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
-    <link href="assets/vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet">
+    <link href="../assets/vendor/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="../assets/vendor/owlcarousel/owl.theme.default.min.css" rel="stylesheet">
     <!-- Timeline -->
-    <link rel="stylesheet" href="assets/vendor/timeline/timeline.css">
+    <link rel="stylesheet" href="../assets/vendor/timeline/timeline.css">
     <!-- FABLES CUSTOM CSS FILE -->
-    <link href="assets/custom/css/custom.css" rel="stylesheet">
+    <link href="../assets/custom/css/custom.css" rel="stylesheet">
     <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
-    <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
+    <link href="../assets/custom/css/custom-responsive.css" rel="stylesheet">
     <!-- SWEET ALERT -->
     <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
@@ -51,7 +47,27 @@
 </head>
 
 <body>
+<?php 
+session_start();
 
+// session_start();
+
+// cek apakah yang mengakses halaman ini sudah login
+if ($_SESSION['hak'] != "petugas") {
+    echo "
+    <script language='JavaScript'>
+    swal('Sorry!', 'Silahkan Login Terlebih Dahulu.', 'error').then(function(){ 
+        window.location.href = 'login.php';
+       }
+    );    
+</script>";
+
+exit;
+}
+
+
+
+?>
 
 
 
@@ -91,9 +107,9 @@
                         </button>
                         <div class="dropdown-menu p-0 fables-forth-background-color rounded-0 m-0 border-0 lang-dropdown" aria-labelledby="dropdownLangButton">
                             <a class="dropdown-item white-color font-13 fables-second-hover-color" href="#">
-                                <img src="assets/custom/images/england.png" alt="england flag" class="mr-1"> English</a>
+                                <img src="../assets/custom/images/england.png" alt="england flag" class="mr-1"> English</a>
                             <a class="dropdown-item white-color font-13 fables-second-hover-color" href="#">
-                                <img src="assets/custom/images/France.png" alt="england flag" class="mr-1"> French</a>
+                                <img src="../assets/custom/images/France.png" alt="england flag" class="mr-1"> French</a>
                         </div>
                     </div>
 
@@ -118,7 +134,7 @@
                 <div class="mx-auto d-block">
                     <nav class="navbar navbar-expand-md btco-hover-menu py-lg-2">
 
-                        <a class="navbar-brand pl-0" href="index.html"><img src="assets/custom/images/fables-logo.png" alt="Fables Template" class="fables-logo"></a>
+                        <a class="navbar-brand pl-0" href="index.html"><img src="../assets/custom/images/fables-logo.png" alt="Fables Template" class="fables-logo"></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fablesNavDropdown" aria-controls="fablesNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="fables-iconmenu-icon text-white font-16"></span>
                         </button>
@@ -161,7 +177,7 @@
         <div class="container position-relative z-index">
             <div class="row">
                 <div class="col-12 col-lg-6 p-0 image-container translate-effect-right wow fadeInLeft mb-3 mb-md-0" data-wow-delay="1s" data-wow-duration="1.5s" style="border-radius: 2vh 0vh 0vh 2vh;">
-                    <img src="assets/custom/images/choose-img.jpg" alt="" class="w-100">
+                    <img src="../assets/custom/images/choose-img.jpg" alt="" class="w-100">
                 </div>
                 <div class="col-12 col-lg-6 bg-white px-6 py-3 py-md-5 wow fadeInRight" data-wow-delay="1s" data-wow-duration="1.5s" style="border-radius: 0vh 2vh 2vh 0vh;;">
                     <h2 class="font-30 font-weight-bold fables-second-text-color">RESEPSIONIS MENU</h2>
@@ -186,7 +202,7 @@
                                     Segala informasi di'inputkan ke dalam data di bawah,dan segala informasi <b>kedatangan tamu</b> sudah di lampirkan secara terbuka dan mohon dijaga kerahasiaan segala data informasi yang diberikan dan di'inputkan
                                 </div>
                                 <div class="d-flex justify-content-center">
-                                        <a href="mtamu/tamu.php">
+                                        <a href="../petugas/tamu/tamu.php">
                                             <button type="button" class="btn btn-info">
                                                 Info Data
                                             </button>
@@ -195,7 +211,7 @@
                             </div>
                         </div>
 
-                        <div class="card border-0 mb-2">
+                        <!-- <div class="card border-0 mb-2">
                             <div class="card-header bg-transparent p-0 border rounded-0" id="headingTwo">
                                 <h5 class="mb-0 position-relative">
                                     <span class="fables-second-background-color white-color d-inline-block position-absolute fables-lus-icon pt-2 text-center">
@@ -211,16 +227,16 @@
                                     Segala informasi di'inputkan ke dalam data di bawah,dan segala informasi <b>kedatangan surat / paket</b> sudah di lampirkan secara terbuka dan mohon dijaga kerahasiaan segala data informasi yang diberikan dan di'inputkan
                                 </div>
                                     <div class="d-flex justify-content-center">
-                                        <a href="msurat/surat.php">
+                                        <a href="../petugas/surat/surat.php">
                                             <button type="button" class="btn btn-info">
                                                 Info Data
                                             </button>
                                         </a>
                                     </div>
                             </div>
-                        </div>
+                        </div> -->
 
-                        <div class="card border-0 mb-2">
+                        <!-- <div class="card border-0 mb-2">
                             <div class="card-header p-0 border bg-transparent rounded-0" id="headingThree">
                                 <h5 class="mb-0 position-relative">
                                     <span class="fables-second-background-color white-color d-inline-block position-absolute fables-lus-icon pt-2 text-center">
@@ -236,14 +252,14 @@
                                     Segala informasi di'inputkan ke dalam data di bawah,dan segala informasi <b>panggilan masuk telepon dari pihak luar perusahaan</b> sudah di lampirkan secara terbuka dan mohon dijaga kerahasiaan segala data informasi yang diberikan dan di'inputkan
                                 </div>
                                 <div class="d-flex justify-content-center">
-                                        <a href="mtlp/tlp.php">
+                                        <a href="../petugas/tlp/tlp.php">
                                             <button type="button" class="btn btn-info">
                                                 Info Data
                                             </button>
                                         </a>
                                     </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -269,7 +285,7 @@
 
                 </div>
                 <div class="col-12 col-lg-4 mb-4 mb-lg-0">
-                    <a href="#" class="fables-second-border-color border-bottom pb-3 d-block mb-3 mt-minus-13"><img src="assets/custom/images/fables-logo.png" alt="fables template"></a>
+                    <a href="#" class="fables-second-border-color border-bottom pb-3 d-block mb-3 mt-minus-13"><img src="../assets/custom/images/fables-logo.png" alt="fables template"></a>
                     <p class="font-15 fables-third-text-color">
                         This Company Profile is compiled with the aim of providing information and insight to the parties concerned, especially the Users of Consulting Services, both in the government and private environment, regarding: company data, organization and management of the company, and proofs of the legality of the Company.
                         <br><br>
@@ -296,10 +312,10 @@
                 <div class="col-12 col-sm-6 col-lg-4">
                     <h2 class="font-20 semi-font fables-second-border-color border-bottom pb-3 mb-3">EXPLORE OUR SITE</h2>
                     <ul class="nav fables-footer-links">
-                        <li><a href="about.php">Profil</a></li>
-                        <li><a href="contactus1.php">Contact Us</a></li>
-                        <li><a href="blog-cat.php">Blog</a></li>
-                        <li><a href="produk.php">Store</a></li>
+                        <li><a href="../about.php">Profil</a></li>
+                        <li><a href="../contactus1.php">Contact Us</a></li>
+                        <li><a href="../blog-cat.php">Blog</a></li>
+                        <li><a href="../produk.php">Store</a></li>
                     </ul>
                 </div>
 
@@ -324,16 +340,16 @@
     <!-- /End Footer 2 Background Image -->
 
 
-    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
-    <script src="assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
-    <script src="assets/vendor/jquery-circle-progress/circle-progress.min.js"></script>
-    <script src="assets/vendor/WOW-master/dist/wow.min.js"></script>
-    <script src="assets/vendor/popper/popper.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap-4-navbar.js"></script>
-    <script src="assets/vendor/owlcarousel/owl.carousel.min.js"></script>
-    <script src="assets/vendor/timeline/jquery.timelify.js"></script>
-    <script src="assets/custom/js/custom.js"></script>
+    <script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../assets/vendor/loadscreen/js/ju-loading-screen.js"></script>
+    <script src="../assets/vendor/jquery-circle-progress/circle-progress.min.js"></script>
+    <script src="../assets/vendor/WOW-master/dist/wow.min.js"></script>
+    <script src="../assets/vendor/popper/popper.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap-4-navbar.js"></script>
+    <script src="../assets/vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../assets/vendor/timeline/jquery.timelify.js"></script>
+    <script src="../assets/custom/js/custom.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('select').selectize({

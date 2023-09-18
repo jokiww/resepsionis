@@ -1,16 +1,16 @@
 <?php 
-session_start();
+// session_start();
 
-if (!isset($_SESSION['login'])) {
-    echo "
-    <script language='JavaScript'>
-    swal('Sorry!', 'Silahkan Login Terlebih Dahulu.', 'error').then(function(){ 
-        window.location.href = '../login.php';
-       }
-    );    
-</script>";
-exit;
-}
+// if (!isset($_SESSION['login'])) {
+//     echo "
+//     <script language='JavaScript'>
+//     swal('Sorry!', 'Silahkan Login Terlebih Dahulu.', 'error').then(function(){ 
+//         window.location.href = '../login.php';
+//        }
+//     );    
+// </script>";
+// exit;
+// }
 // koneksi db
 require '../function.php';
 // ambil data query

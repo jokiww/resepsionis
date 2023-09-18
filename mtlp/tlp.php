@@ -213,12 +213,17 @@ require '../function/ftlp.php';
     <!--$%adsense%$-->
     <main class="cd__main">
         <!-- Start DEMO HTML (Use the following code into your project)-->
-
         <div class="text-center">
-            <a href="ltambah.php">
+            <a href="lcetak.php" style="position: absolute;left: 84vh;">
+                <button class="btn btn-warning"><i class="fa-solid fa-user-plus"></i>Print Data</button>
+            </a>
+        </div>
+        <div class="text-center">
+            <a href="ltambah.php" style="position: absolute;">
                 <button class="btn btn-success"><i class="fa-solid fa-user-plus"></i> Tambah Data</button>
             </a>
         </div>
+        
         <form action="" method="get">
             <table id="example" class="table table-striped text-center table-bordered" style="width: 100%">
                 <thead>
